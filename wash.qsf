@@ -1,0 +1,95 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 10:11:18  December 02, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		wash_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY wmtop
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:11:18  DECEMBER 02, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name VERILOG_FILE display.v
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VERILOG_FILE gettime.v
+set_global_assignment -name VERILOG_FILE wmtop.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_33 -to clk
+set_location_assignment PIN_212 -to rst
+set_location_assignment PIN_117 -to stateindic[5]
+set_location_assignment PIN_110 -to accelerate
+set_location_assignment PIN_93 -to start
+set_location_assignment PIN_94 -to waterfull
+set_location_assignment PIN_237 -to index_n[3]
+set_location_assignment PIN_238 -to index_n[2]
+set_location_assignment PIN_239 -to index_n[1]
+set_location_assignment PIN_240 -to index_n[0]
+set_location_assignment PIN_221 -to lastdigit[6]
+set_location_assignment PIN_219 -to lastdigit[5]
+set_location_assignment PIN_197 -to lastdigit[4]
+set_location_assignment PIN_196 -to lastdigit[3]
+set_location_assignment PIN_195 -to lastdigit[2]
+set_location_assignment PIN_223 -to lastdigit[1]
+set_location_assignment PIN_224 -to lastdigit[0]
+set_location_assignment PIN_234 -to fourdigit[7]
+set_location_assignment PIN_226 -to fourdigit[6]
+set_location_assignment PIN_231 -to fourdigit[5]
+set_location_assignment PIN_235 -to fourdigit[4]
+set_location_assignment PIN_236 -to fourdigit[3]
+set_location_assignment PIN_232 -to fourdigit[2]
+set_location_assignment PIN_230 -to fourdigit[1]
+set_location_assignment PIN_233 -to fourdigit[0]
+set_location_assignment PIN_112 -to stateindic[4]
+set_location_assignment PIN_111 -to stateindic[3]
+set_location_assignment PIN_109 -to stateindic[2]
+set_location_assignment PIN_108 -to stateindic[1]
+set_location_assignment PIN_107 -to stateindic[0]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Jun Wei/Desktop/washingmachine/Waveform2.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

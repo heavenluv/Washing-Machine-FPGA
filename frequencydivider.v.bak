@@ -1,0 +1,31 @@
+module frequencydivider(clk,rst,clkout_1hz)
+input clk,rst;
+output clkout_1hz;
+reg [24:0]cnt;
+reg data;
+reg reset;
+
+always@(posedge clk)
+begin
+	reset<=rst;
+end
+
+always@(posedge clk or negedge reset)
+begin
+	if (!reset)
+	begin
+		cnt<=0;
+		data<=0;
+	end
+	else if(cnt==24'd12_000_000)
+	begin
+		cnt<=0;
+		data<=~data;
+	end
+	else
+	begin
+		cnt<=cnt+1;
+	end
+end
+assign clkout_1hz=data;
+endmodule
